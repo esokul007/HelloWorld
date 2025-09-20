@@ -1,9 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1i2yopnvep43"]
+[gd_scene load_steps=4 format=3 uid="uid://d1i2yopnvep43"]
 
-[ext_resource type="Texture2D" uid="uid://blhj76cts20jq" path="res://assets/icon.svg" id="1_ayu48"]
+[ext_resource type="Texture2D" uid="uid://dmil6act2ac6g" path="res://assets/counter.png" id="1_atuvt"]
+[ext_resource type="PackedScene" uid="uid://3tr3501mj6p1" path="res://scenes/fountain.tscn" id="2_codmc"]
+[ext_resource type="PackedScene" uid="uid://cryrbjtm55r2n" path="res://scenes/cup.tscn" id="3_codmc"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Store" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(83, 81)
-texture = ExtResource("1_ayu48")
+[node name="Counter" type="Sprite2D" parent="."]
+position = Vector2(482.75003, 543)
+scale = Vector2(0.32016668, 0.298)
+texture = ExtResource("1_atuvt")
+
+[node name="Fountain" parent="." instance=ExtResource("2_codmc")]
+
+[node name="Cup" parent="." instance=ExtResource("3_codmc")]
+position = Vector2(795, 392)

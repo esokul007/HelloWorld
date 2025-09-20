@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="HelloWorld2025"
+run/main_scene="uid://d1i2yopnvep43"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://assets/icon.svg"
